@@ -156,7 +156,7 @@ footer p {
 /* -------  Media Query ------- */
 /* When a web browser is larger than 600 pixels,
    apply these rules. */
-   @media all and (min-width: 600px) {
+   @media all and (min-width: 480px) {
      /* -------  Header ------- */
     header {
       display: flex;
@@ -211,4 +211,3 @@ footer p {
     }
   
   }
-  
