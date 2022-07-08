@@ -43,7 +43,15 @@ main img {
 
 .item-row {
   display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.item-column {
+  display: flex;
+  flex: 1;
   flex-direction: column;
+  margin: 20px;
 }
 
 .item-row img {
@@ -108,8 +116,11 @@ header nav ul li a:hover {
 
 
 /* -------  Ideas ------- */
+
+
 .ideas {
   display: flex;
+  flex: 1;
   flex-direction: row;
   margin-bottom: 100px;
 }
@@ -136,6 +147,7 @@ form {
   flex-direction: column;
 }
 
+
 form label {
   font-weight: bold;
 }
@@ -143,8 +155,9 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 65%;
+  width: 100%;
   float: right;
+
 }
 
 form button {
@@ -176,7 +189,7 @@ footer p {
     /* -------  Form ------- */
     form {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-around;
       padding: 10px;
     }
@@ -185,7 +198,6 @@ footer p {
     form input {
       margin-bottom: 10px;
       width: 100%;
-
     }
 
     /* -------  Ideas ------- */
@@ -207,18 +219,12 @@ footer p {
 
 
    @media all and (max-width: 480px) {
-    form {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      padding: 10px;
-    }
 
-    form select,
-    form input {
-      margin-bottom: 10px;
-      width: 100%;
-
+    .logo {
+      font-family: "Pangolin", cursive;
+      font-size: 50px;
+      color: #fff;
+      text-align: center;
     }
 
      /* -------  Header ------- */
